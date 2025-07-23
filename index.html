@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar with Login & Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyWebsite</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+        <div class="auth-buttons">
+        <button id="showLoginBtn">Login</button>
+        <button id="showSignupBtn">Signup</button>
+      </div>
+  
+    </div>
+  </nav>
+
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span><a href=""> ← </a></span>
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginpassword" placeholder="Password">
+    <button onclick="loginUser()">Login</button> 
+    <p class="login-sign-text">Or login with</p>
+    <div class="social-buttons">
+      <button class="google-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"> Google</button>
+      <button class="facebook-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook"> Facebook</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="signupModal">
+  <div class="modal-content">
+    <span><a href=""> ← </a></span>
+    <h2>Signup</h2>
+    <input type="text" id="signupName" placeholder="Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signuppassword" placeholder="Password">
+    <button onclick="signupUser()">Signup</button>
+    <p class="login-sign-text">Or signup with</p>
+    <div class="social-buttons">
+      <button class="google-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"> Google</button>
+      <button class="facebook-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook"> Facebook</button>
+    </div>
+  </div>
+</div>
+
+
+  <section class="card-section">
+    <div class="car-card">
+      <img src="https://mgmotors.com.pk/_next/image?url=%2Fassets%2Fcyberster-landing.webp&w=1920&q=30/300x150" alt="Car 1">
+      <h3>Car Model A</h3>
+      <p>2022 | Petrol | Automatic</p>
+    </div>
+    <div class="car-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvl07SeB_N3KxZmmh3Row2KdhkzcSnnfe-g&s/300x150" alt="Car 2">
+      <h3>Car Model B</h3>
+      <p>2021 | Diesel | Manual</p>
+    </div>
+    <div class="car-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-UnT-ApY0SCFM1o-yTG-H63eIDOp47vD0g&s/300x150" alt="Car 3">
+      <h3>Car Model C</h3>
+      <p>2023 | Electric | Automatic</p>
+    </div>
+  </section>
+  <section class="card-section">
+    <div class="car-card">
+      <img src="https://mgmotors.com.pk/_next/image?url=%2Fassets%2Fcyberster-landing.webp&w=1920&q=30/300x150" alt="Car 1">
+      <h3>Car Model A</h3>
+      <p>2022 | Petrol | Automatic</p>
+    </div>
+    <div class="car-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvl07SeB_N3KxZmmh3Row2KdhkzcSnnfe-g&s/300x150" alt="Car 2">
+      <h3>Car Model B</h3>
+      <p>2021 | Diesel | Manual</p>
+    </div>
+    <div class="car-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-UnT-ApY0SCFM1o-yTG-H63eIDOp47vD0g&s/300x150" alt="Car 3">
+      <h3>Car Model C</h3>
+      <p>2023 | Electric | Automatic</p>
+    </div>
+  </section>
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ <script src="app.js"></script>
+</body>
+</html>

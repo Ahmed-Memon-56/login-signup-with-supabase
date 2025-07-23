@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+nav {
+  background-color: #114529;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  padding: 6px 14px;
+  border-radius: 5px;
+  background: #ffffff22;
+  color: white;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.auth-buttons button:hover {
+  background: white;
+  color: #114529;
+  border: 1px solid #114529;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+
+}
+#para {
+color: gray;
+text-align: center;
+padding: 10px;
+}
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+
+.modal-content span a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #114529;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+  transition: color 0.3s ease;
+}
+
+.modal-content span a:hover {
+  color: #0d3b21;
+}
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #114529;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  background: #114529;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #0d3b21;
+}
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.social-buttons button img {
+  width: 20px;
+  height: 20px;
+}
+
+.google-btn {
+  background-color: #ffffff;
+  color: #444;
+  border: 1px solid #ccc;
+}
+
+.google-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+}
+
+.facebook-btn:hover {
+  background-color: #2d4373;
+}
+
+.login-sign-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.card-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+}
+
+.car-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  margin: 10px 0;
+  color: #114529;
+}
+
+.car-card p {
+  padding: 0 10px 20px;
+  color: #555;
+}
+
+.dashboard-content {
+  padding: 50px;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  color: #114529;
+  margin-bottom: 20px;
+}
+
+/* .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+} */
